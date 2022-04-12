@@ -29,7 +29,7 @@ body {
 
 /* Universal styles & utility classes */
 
-.padded         { padding: 8%; }
+.padded         { padding: 5%; }
 .padded-sm      { padding: 1rem; }
 .padded-lg      { padding: 10%; }
 
@@ -70,11 +70,9 @@ a {
    border-bottom: 1px solid;
 }
 
-a:hover { 
-   color: #FFBE00;
-}
+a:hover { color: #FFBE00;  }
 
-.featured-text { color: #FFBE00; }
+.featured-text { color: #FFBE00;}
 .white-text { color: white; }
 
 .small-text { font-size: 1.5rem; }
@@ -85,7 +83,7 @@ a:hover {
 .big-text { font-size: 4.5rem;  }
 
 .subtitle { 
-   font-size: 1rem;
+   font-size: 1.2rem;
    color: rgb(120,120,125);
 }
 
@@ -93,6 +91,7 @@ a:hover {
    font-size: 6rem;
    display: inline-block;
    line-height: 1;
+   color: rgb(120,120,125); 
  }
 
 
@@ -101,9 +100,9 @@ a:hover {
 .font-weight-normal     { font-weight: normal; }
 .font-weight-extra-bold { font-weight: 800; }
 
-.text-left   { text-align-left; }
-.text-center { text-align-center; }
-.text-right  { text-align-right; }
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
 
 
 /* Header & Footer Styles */
