@@ -1,0 +1,61 @@
+---
+layout: default
+cards:
+- heading: Small Heading
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  featured_image: /images/frangipani.jpg
+- heading: Small Heading
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  featured_image: /images/bg-sheets.jpg
+- heading: Small Heading
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  featured_image: /images/bg-pillow.jpg
+---
+
+
+
+<!------------------ header banner------------------------>
+    <header class="padded grid text-center tall-100">
+
+ {% include header-nav.html %}
+
+    <div class="col-12 text-center"> 
+        <h3 class="font-weight-extra-bold">
+            <span class="featured-text"> Ultimate level </span> mattress 
+        </h3>
+        <h1 class="font-weight-light">
+            the softest mattress membership
+        </h1>
+    </div>
+</header>
+
+
+
+<!--------------- Cards --------------->
+<section class="grid padded">
+    {% for item in page.cards %}
+    <div class="col-4 padded-sm">
+        <div class="card">
+            <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"></div>
+            <div class="padded-1">
+                <h3>{{item.heading}}</h3>
+                <p>{{item.description}}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+ </section>
+
+
+
+
+
+<!------------------------------- imege banner -------------------------------------->
+<section class="padded text-center bg-sheets tall-50 grid bg-image">
+    <div class="col-12-middle"> 
+        <h3 class="big-text"> 
+            <span class="small-text font-weight-normal"> never underestimate the power of </span>
+            <br /> a good night <span class="white-text"> sleep </span> </h3>          
+    </div>
+</section>
+

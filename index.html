@@ -1,38 +1,28 @@
-<!DOCTYPE html>
-<html>
-<!-- This is the head of our html where we add external resources and metadata-->
-<head> 
-  <title> Sleep like a baby </title>
+---
+layout: default
+featured:
+ - icon: fas fa-cloud
+ - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
 
-<!--------------------- This is our fontawesome icons ------------------->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!--------------------- Gridlex for our flexbox grids ------------------->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+ - icon: fas fa-seedling
+ - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
-<!---------------------- Google font - catamaran 200,400,500,800 --------->
-<link rel="preconnect" href="https://fonts.googleapis.com" /> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
-<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet" />
+ - icon: fas fa-fire
+ - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
-<!----------------------- This is our custom stylesheet ------------------> 
-<link href="/style.css" rel="stylesheet" />
+ - icon: fas fa-water
+ - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+---
 
-</head>
-
-<!------------------------ This is the body, this is where all of our page content goes ----->
-<body>
-
-    <nav>
-        <a href="/index.html/"> Home </a>
-        <a href="/about.html/"> About </a>
-        <a href="/contact.html/"> Contact </a>
-    </nav>
 
 
     <!--------------------------- Header Banner --------------------------------------------->
 <header class="padded grid text-center tall-100">
-    <div class="col-12-middle"> 
+    
+    {% include header-nav.html %}
+
+    <div class="col-12 text-center"> 
         <h3 class="font-weight-extra-bold editable">
             <span class="featured-text"> sleep </span> like a baby
         </h3>
@@ -40,11 +30,12 @@
             the ultimate mattress solution
         </h1>
     </div>
+
 </header>
 
 <!------------------------------ Gallery / about Section ------------------------------------->
 <section class="grid">
-     <div class="padded col-6">
+     <div class="padded col-3_xs-12">
           <h2 class="editable">
               built to last a <span class="featured-text"> lifetime </span>
           </h2>
@@ -53,53 +44,57 @@
           </p> 
 </div>
 
-<div class="bg-image bg-bed col-6 tall-70"> </div>
+<div class="bg-image bg-bed col-3_xs-12 tall-70 "> </div>
 
     <!---------------  background image frangipani ----------->
 
-<div class="bg-image bg-pillow col-6 tall-70"> </div>
+<div class="bg-image bg-pillow col-3_xs-12 tall-70 "> </div>
 
     <!--------------- background image coco --------------->
-<div class="padded-col-6 padded">
+<div class="padded-col-3_xs-12 padded">
     <h2> so <span class="featured-text"> soft </span> you'll melt </h2>
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec egestas odio, eget molestie massa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolores quisquam at atque architecto? Corporis optio, molestias nobis voluptas nihil ea, sunt distinctio delectus perspiciatis atque vitae quidem ratione ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla beatae in repellat totam quia cupiditate esse similique! Sit maxime incidunt deserunt dolore doloribus, sequi dolorem, debitis accusantium minus quaerat optio.  </p>
 </div>
 </section>
 
 
-<!-------------------------------  Feature icon grid ------------------------------------------->
 
-<section class="padded grid bg-dark">
-<div class="padded-sm col-12 text-center"> 
-<h2 class="text-center"> 
-    <span class="featured-text"> Features </span> you will love </h2>    
-</div>
 
-<div class="padded-sm col-3 editable"> 
-    <i class="fas fa-cloud text-center"></i>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec egestas odio, eget molestie massa. </p> 
-</div>
 
-<div class="padded-sm col-3 editable"> 
-    <i class="fas fa-cloud"> </i>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec egestas odio, eget molestie massa. 
+<!--------------- Feature icons grid --------------->
 
- </p>    
-</div>
+<section class="padded grid-center bg-dark">
+    <div class="padded-sm col-12 text-center">
+        <h2><span class="featured-text">Features</span> you will love</h2>
+    </div>
+    
+    {% for item in page.featured %}
+    
+    <div class="padded-sm col-3_sm-6 xxs-stack editable">
+        <i class="{{item.icon}}"></i>
+        <p>{{item.description}}</p>
+    </div>
+    
+    {% endfor %}
+    
+ </section>
 
-<div class="padded-sm col-3 editable"> 
-    <i class="fas fa-cloud"></i>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec egestas odio, eget molestie massa.  </p>  
-</div>
 
-<div class="padded-sm col-3 editable"> 
-    <i class="fas fa-cloud"> </i>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec egestas odio, eget molestie massa.  </p>  
-</div>
-</section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!------------------------------- imege banner -------------------------------------->
-<section class="padded text-center bg-frangipani tall-70 grid bg-image">
+<section class="padded text-center bg-sheets tall-70 grid bg-image">
     <div class="col-12-middle"> 
         <h3 class="big-text"> 
             <span class="small-text font-weight-normal"> never underestimate the power of </span>
@@ -119,23 +114,3 @@
     </div>
 </section>
 
-<!-------------------------------------- Footer  ----------------------------------->
-
-<footer class="padded grid-spaceBetween bg-dark"> 
-<div class="col-4 bottom"> 
-    <h2> Let's <br /> <span class="featured-text"> connect </span> </h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec egestas odio, eget molestie massa. Etiam nec enim at odio consectetur gravida. Donec accumsan interdum leo in interdum. 
-    </p> 
-</div>
-
-<div class="col-5 bottom"> 
-    <p> <strong>   Email:      </strong>  <a href="mailto:#"> hello@thesleep.co </a> </p>
-    <p>  <strong>   Call:      </strong>   <a href="tel:#"> 374945908463 </a> </p>
-    <p>  <strong>   Agency:    </strong> 55 Main St, Milan </p>
-    <p>  <strong>   Instagram: </strong>   <a href="https://www.instagram.com/thesleepco"> @thesleep.co </a> </p>
-</div>
-
-</footer>
-
-</body>
-</html>
