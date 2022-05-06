@@ -23,35 +23,37 @@ featured:
     {% include header-nav.html %}
 
     <div class="col-12 text-center"> 
-        <h3 class="font-weight-extra-bold editable">
+        <h3 class="font-weight-extra-bold">
             <span class="featured-text"> sleep </span> like a baby
         </h3>
-        <h1 class="font-weight-light editable">
+        <h1 class="font-weight-light">
             the ultimate mattress solution
         </h1>
     </div>
 
 </header>
 
-<!------------------------------ Gallery / about Section ------------------------------------->
+<!------------------------------firt Section ------------------------------------->
 <section class="grid">
-     <div class="padded col-3_xs-12">
-          <h2 class="editable">
+     <div class="padded col-6_xs-12">
+          <h2>
               built to last a <span class="featured-text"> lifetime </span>
           </h2>
-          <p class="editable">
+          <p>
               Lorem ipsum dolor sit amet, consectetur <a href="https://www.google.it">adipiscing</a> elit. Donec accumsan interdum leo in interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi nisi harum vitae atque laborum accusantium esse nostrum nulla, veritatis incidunt ex quod consequuntur magnam maxime cum consequatur quis sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ullam, libero molestiae esse quo error ipsa itaque. Illo sit nostrum quod doloremque id eos dicta, quo, esse obcaecati odit corrupti.
           </p> 
 </div>
 
-<div class="bg-image bg-bed col-3_xs-12 tall-70 "> </div>
+<div class="bg-image bg-bed col-6_xs-12 tall-70"> </div>
 
     <!---------------  background image frangipani ----------->
 
-<div class="bg-image bg-pillow col-3_xs-12 tall-70 "> </div>
+<div class="bg-image bg-pillow col-6_xs-12 tall-70 "> </div>
 
-    <!--------------- background image coco --------------->
-<div class="padded-col-3_xs-12 padded">
+
+
+    <!--------------------- other section --------------------->
+<div class="padded-col-6_xs-12 padded">
     <h2> so <span class="featured-text"> soft </span> you'll melt </h2>
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec egestas odio, eget molestie massa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolores quisquam at atque architecto? Corporis optio, molestias nobis voluptas nihil ea, sunt distinctio delectus perspiciatis atque vitae quidem ratione ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla beatae in repellat totam quia cupiditate esse similique! Sit maxime incidunt deserunt dolore doloribus, sequi dolorem, debitis accusantium minus quaerat optio.  </p>
 </div>
@@ -70,7 +72,7 @@ featured:
     
     {% for item in page.featured %}
     
-    <div class="padded-sm col-3_sm-6 xxs-stack editable">
+    <div class="padded-sm col-3_sm-6 xxs-stack">
         <i class="{{item.icon}}"></i>
         <p>{{item.description}}</p>
     </div>
@@ -78,16 +80,6 @@ featured:
     {% endfor %}
     
  </section>
-
-
-
-
-
-
-
-
-
-
 
 
 
