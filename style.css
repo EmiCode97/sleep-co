@@ -140,6 +140,13 @@ footer a { border: none;}
    background-position: 50% 90%;
 }
 
+
+
+img { image-orientation: inherit;}
+
+
+
+
 /* Icon Grid */ 
 .fas {
    display: block;
@@ -217,3 +224,11 @@ footer a { border: none;}
  }
  
  .button:hover { background-color: #c8c2ae ;}
+
+
+ .card {
+    margin: 3rem;
+ }
+
+ .margin-top { margin-top: 1.5rem;}
+
