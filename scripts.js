@@ -8,5 +8,9 @@ $( document ).ready(function() {
 
   });
 
+// Animate on scroll - activate
+AOS.init();
+
+
 
 });
