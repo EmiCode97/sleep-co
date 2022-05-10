@@ -266,13 +266,6 @@ hamburger-button i {
    display: none;
  }
  
- 
- /* ------- SM Media Query (48em / 768px) --------------- */ 
- @media(max-width:48em) {
-   .hide-sm { display: none; }
-   .show-sm { display: block; }
- }
- 
 
 
  
@@ -280,12 +273,17 @@ hamburger-button i {
  
  .show-xs, 
  .show-sm,
- .show-md 
+ .show-md, 
  .mobile-menu {
     display: none;
  }
  
-
+ 
+ /* ------- SM Media Query (48em / 768px) --------------- */ 
+ @media(max-width:48em) {
+   .hide-sm { display: none; }
+   .show-sm { display: block; }
+ }
 
 
  /* ------- MD Media Query (64em / 1024px) --------------- */ 
