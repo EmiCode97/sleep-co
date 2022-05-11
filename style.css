@@ -23,6 +23,9 @@ body {
    background-image: url('/images/the-sleep-co-pug.jpg');
    background-size: cover;
    min-height: 10rem;
+   background-color: rgb(240,240,240);
+   background-position: center;
+
 }
 
 /* Universal styles & utility classes */
@@ -43,6 +46,24 @@ body {
 .tall-90  { min-height: 90vh; }
 .tall-100 { min-height: 100vh; }
 
+
+
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+
+
+
+
+/* image gallery */
+
+.gallery [class*="col-"] {
+  padding: 0.5%;
+}
 
 
 /* Typography Styles */
@@ -143,6 +164,12 @@ footer a { border: none;}
 
 
 
+/* Aspect Ratio  */
+.portrait-tall { padding-bottom: 175%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
 
 
 /* Icon Grid */ 
