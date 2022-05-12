@@ -3,7 +3,7 @@ layout: default
 cards:
   - heading: Small Heading
     description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    featured_image: /images/the-sleep-co-frangipani.jpg
+    featured_image: /images/frangipani.jpg
   - heading: Small Heading
     description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
     featured_image: /images/texture.jpg
@@ -34,7 +34,7 @@ cards:
     {% for item in page.cards %}
     <div class="col-4 padded-sm">
         <div class="card">
-            <div class="tall-50" style="background-image: url('{{item.featured_image}}')"></div>
+            <div class="tall-50 bg-pos-t" style="background-image: url('{{item.featured_image}}')"></div>
             <div class="padded-1 margin-top">
                 <h3>{{item.heading}}</h3>
                 <p>{{item.description}}</p>

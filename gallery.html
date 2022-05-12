@@ -1,27 +1,25 @@
 ---
 layout: default
 gallery:
+
+  - column-size: col-4_sm-12
+    aspect-ratio: landscape
+    background_image: /images/wowwave.jpg
+  - column-size: col-4_sm-12
+    aspect-ratio: landscape
+    background_image: /images/frangipani.jpg
+  - column-size: col-4_sm-12
+    aspect-ratio: landscape
+    background_image: /images/shadow.jpg
+  - column-size: col-12
+    aspect-ratio: landscape
+    background_image: /images/wowsea.jpg
   - column-size: col-6_sm-12
     aspect-ratio: square
     background_image: /images/texture.jpg
   - column-size: col-6_sm-12
     aspect-ratio: square
-    background_image: /images/wowsea.jpg
-  - column-size: col-12
-    aspect-ratio: landscape
-    background_image: /uploads/shadow.jpg
-  - column-size: col-3_sm-12
-    aspect-ratio: landscape
-    background_image: /uploads/wowwave.jpg
-  - column-size: col-3_sm-12
-    aspect-ratio: landscape
-    background_image: /images/frangipani.jpg
-  - column-size: col-3_sm-12
-    aspect-ratio: landscape
-    background_image: /uploads/wowisla.jpg
-  - column-size: col-3_sm-12
-    aspect-ratio: landscape
-    background_image: /images/seapalm.jpg
+    background_image: /images/wowisla.jpg
 ---
 
 <!--------------------------- Header Banner --------------------------------------------->
@@ -38,7 +36,48 @@ gallery:
     
     </header>
 
+
+   <!-- popup gallery-->
 <section class="padded">
+
+
+  <div class="gallery grid" id="lightgallery">
+
+    {% for item in page.gallery %}
+         <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
+           <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"> 
+           </div>
+          </a> 
+ 
+         {% endfor %}
+ 
+       </div>
+
+
+
+
+  <div class="gallery grid" id="lightgallery-2">
+
+      
+             <a class="button" href="/images/frangipani.jpg" title="0">
+               View Our Work
+              </a> 
+
+              <a href="/images/seapalm.jpg" title="1"></a> 
+              <a href="/images/wowisla.jpg" title="2"></a> 
+              <a href="/images/shadow.jpg" title="3"></a> 
+              <a href="/images/wowsea.jpg" title="4"></a> 
+              <a href="/images/texture.jpg" title="5"></a> 
+              <a href="/images/wowwave.jpg" title="6"></a> 
+            
+
+   </div>
+
+</section>
+
+
+<!-- standard gallery-->
+<section class="padded"> 
     <div class="gallery grid">
 
    {% for item in page.gallery %}
@@ -50,6 +89,9 @@ gallery:
         {% endfor %}
 
       </div>
+</section>
+
+
 
 
   <!-- <div class="gallery grid">
@@ -74,4 +116,4 @@ gallery:
       </div>
       --> 
 
-    </section>
+

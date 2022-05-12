@@ -65,6 +65,24 @@ body {
   padding: 0.5%;
 }
 
+.gallery .gallery-item {
+border-bottom: none;
+}
+
+
+/* background of gallery when active */
+.lg-backdrop {
+  background-color: rgb(20, 20, 20);
+}
+
+.lg-backdrop.in  {
+  opacity: 0.95;
+}
+
+.lg-sub-html {
+  background-color: rgba(20, 20, 20, 0.95);
+}
+
 
 /* Typography Styles */
 
@@ -189,6 +207,9 @@ footer a { border: none;}
    font-size: 3rem;
 }
 
+
+
+
  /* contact page style */ 
 
  form input,
@@ -237,11 +258,8 @@ footer a { border: none;}
    border: 2px solid #f8edeb;
    background-color: #f8edeb;
    text-align: center;
-   
  }
- 
- 
- 
+
  .form-style-two button {
    border: 2px solid #f8edeb;
    background-color: #ff985f;
@@ -257,17 +275,25 @@ footer a { border: none;}
    border-color: #f8edeb;
  }
  
- .button:hover { background-color: #c8c2ae ;}
 
 
- .card {
+.button { background-color: #FFBE00;}
+
+.button:hover { background-color: #f8edeb ;}
+
+
+.card {
     margin: 3rem;
  }
 
- .margin-top { margin-top: 1.5rem;}
+.margin-top { margin-top: 1.5rem;}
 
 
 .center { text-align: center;}
+
+
+
+
 
 /* hamburger menu */
 
