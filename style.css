@@ -119,6 +119,10 @@ a {
 
 a:hover { color: #FFBE00;  }
 
+
+
+
+
 .featured-text { color: #FFBE00;}
 .white-text { color: white; }
 
@@ -168,6 +172,16 @@ header h3 {
 
 footer a { border: none;}
 
+
+nav a { 
+  padding: 0.5rem;
+  display: inline-block;
+  border: none;
+}
+
+
+
+
  /* copyright */ 
  .subtle { 
   opacity: 0.8;
@@ -216,72 +230,37 @@ footer a { border: none;}
 }
 
 
+input, 
+textarea {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.3rem;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  border: 2px solid transparent;
+  text-align: center;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #FFBE00;
+  outline: none;
+}
+
+.button {
+  padding: 0.5rem 2rem;
+  background-color: #FFBE00;
+  appearance: none;
+  border: 2px solid #FFBE00;
+  color: inherit;
+}
 
 
- /* contact page style */ 
 
- form input,
- form textarea {
-   width: 100%;
-   margin: 0.5rem 0;
-   padding: 0.5rem;
-   border: 2px solid rgb(220,220,220);
-   outline: none;
-   font-family: inherit;
-   font-size: 0.8rem; 
-   font-weight: bold;
- }
- 
- form input:focus,
- form textarea:focus {
-   border-color: teal;
- }
- 
- textarea {
-   min-height: 8rem;
-   
- }
- 
- form label {
-   margin-top: 1rem;
-   display: block;
-   color: #6C7A89;
-   font-weight: bold;
-   text-transform: uppercase;
-   
- }
- 
- form button {
-   background-color: #6C7A89;
-   color: white;
-   border: none;
-   padding: 0.5rem 2rem;
-   margin: 0.5rem 0;
- }
- 
- 
- 
- .form-style-two input,
- .form-style-two textarea {
-   border: 2px solid #f8edeb;
-   background-color: #f8edeb;
-   text-align: center;
- }
 
- .form-style-two button {
-   border: 2px solid #f8edeb;
-   background-color: #ff985f;
-   color: #f8edeb;
-   font-size: 0.6rem;
-   letter-spacing: 0.02em;
-   font-weight: light;
-   
- }
- 
- form input:focus,
- form textarea:focus {
-   border-color: #f8edeb;
- }
+
+
  
 
 
@@ -290,9 +269,7 @@ footer a { border: none;}
 .button:hover { background-color: #f8edeb ;}
 
 
-.card {
-    margin: 3rem;
- }
+.card { margin: 3rem; }
 
 .margin-top { margin-top: 1.5rem;}
 
@@ -388,9 +365,6 @@ footer a { border: none;}
 
 
 
-
-
-
  /* ------- MD Media Query (64em / 1024px) --------------- */ 
  /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
  
@@ -437,3 +411,85 @@ footer a { border: none;}
  
  
  .margin-bottom { margin-bottom: 2.5rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* other contact page style 
+
+ form input,
+ form textarea {
+   width: 100%;
+   margin: 0.5rem 0;
+   padding: 0.5rem;
+   border: 2px solid rgb(220,220,220);
+   outline: none;
+   font-family: inherit;
+   font-size: 0.8rem; 
+   font-weight: bold;
+ }
+ 
+ form input:focus,
+ form textarea:focus {
+   border-color: teal;
+ }
+ 
+ textarea {
+   min-height: 8rem;
+   
+ }
+ 
+ form label {
+   margin-top: 1rem;
+   display: block;
+   color: #6C7A89;
+   font-weight: bold;
+   text-transform: uppercase;
+   
+ }
+ 
+ form button {
+   background-color: #6C7A89;
+   color: white;
+   border: none;
+   padding: 0.5rem 2rem;
+   margin: 0.5rem 0;
+ }
+ 
+ 
+ 
+ .form-style-two input,
+ .form-style-two textarea {
+   border: 2px solid #f8edeb;
+   background-color: #f8edeb;
+   text-align: center;
+ }
+
+ .form-style-two button {
+   border: 2px solid #f8edeb;
+   background-color: #ff985f;
+   color: #f8edeb;
+   font-size: 0.6rem;
+   letter-spacing: 0.02em;
+   font-weight: light;
+   
+ }
+ 
+ form input:focus,
+ form textarea:focus {
+   border-color: #f8edeb;
+ }
+
+
+
+ */ 
