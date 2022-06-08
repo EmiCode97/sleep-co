@@ -19,9 +19,9 @@ cards:
 
     <div class="col-12 text-center"> 
         <h3 class="font-weight-extra-bold">
-            <span class="featured-text"> Ultimate level </span> mattress 
+            <span class="featured-text editable"> Ultimate level </span> mattress 
         </h3>
-        <h1 class="font-weight-light">
+        <h1 class="font-weight-light editable">
             the softest mattress membership
         </h1>
     </div>
@@ -32,9 +32,9 @@ cards:
 <!--------------- Clickable Images  --------------->
 <section class="grid padded">
     {% for item in page.cards %}
-    <div class="col-4 padded-sm">
+    <div class="col-4_sm-12">
         <div class="card">
-            <div class="tall-50 bg-pos-t" style="background-image: url('{{item.featured_image}}')"></div>
+            <div class="tall-50 bg-pos-t bg-image" style="background-image: url('{{item.featured_image}}')"></div>
             <div class="padded-1 margin-top">
                 <h3>{{item.heading}}</h3>
                 <p>{{item.description}}</p>
@@ -47,13 +47,10 @@ cards:
 
 
 
-
-
 <!------------------------------- imege banner -------------------------------------->
-<section class="padded text-center bg-sheets tall-70 grid">
-    <div class="col-12-middle"> 
-        <h3 class="big-text"> 
-            <span class="small-text font-weight-normal"> never underestimate the power of </span>
-            <br /> a good night <span class="white-text"> sleep </span> </h3>          
-    </div>
-</section>
+{% include image-banner.html %}
+
+
+<!------------------------------- testimonial section ------------------------------->
+{% include testimonial.html %}
+
