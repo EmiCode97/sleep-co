@@ -316,19 +316,17 @@
 <!--------------- our Custom java script file ------------------->
 <script src="/scripts.js"></script>
 
- <div id="cookie-notice">
-    <span> We would like to use third party cookies and scripts to improve the functionality of this website.</span>
+ <script async src="<https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID>"></script>
+
+
+<div id="cookie-notice">
+    <span>We would like to use third party cookies and scripts to improve the functionality of this website.</span>
     
     <a href="/privacy" class="button-subtle">More info</a>
     <a id="cookie-notice-accept" class="button">Approve</a>
     <!-- Optional close button that declines the cookies -->
-    <span id="close-cookie-banner" class="button"> X </span>
+    <span id="close-cookie-banner"> X </span>
 </div>
-
-
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="<https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID>"></script>
-
 <script>
     function createCookie(name,value,days) {
         var expires = "";
@@ -353,26 +351,15 @@
         createCookie(name,"",-1);
     }
     if(readCookie('cookie-notice-dismissed')=='true') {
-       
-       
         // Add tracking scripts here 
-           alert('Tracking codes activated');
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-          <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){window.dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'GA_MEASUREMENT_ID');
-</script> 
-
-
-
-
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
         // End tracking scripts 
-
-
-
     } else {
         document.getElementById('cookie-notice').style.display = 'block';
     }
@@ -385,8 +372,7 @@
         
         document.querySelector("#cookie-notice").style.display = 'none';
     });
-
-</script> 
+</script>
 
 
 
