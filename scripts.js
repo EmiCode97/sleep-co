@@ -31,3 +31,6 @@ lightGallery(document.getElementById('lightgallery-2'), {
   download: false
   
 });
+
+
+
