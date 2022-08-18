@@ -363,12 +363,12 @@ textarea:focus {
    position: absolute;
    right: 1rem;
    top: 2.1rem;
-   z-index: 2;
+   z-index: 6;
  }
  
  .hamburger-button.active::after {
    content: "x";
-   color: white;
+   color: black;
  }
  
  .mobile-menu {
@@ -381,6 +381,7 @@ textarea:focus {
    bottom: 0;
    left: 0;
    text-align: center;
+   z-index: 5;
  }
  
  .mobile-menu a {
