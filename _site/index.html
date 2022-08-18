@@ -377,11 +377,19 @@
     if(readCookie('cookie-notice-dismissed')=='true') {
 
         // Add tracking scripts here 
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        
+        alert('Tracking codes activated');
 
-        gtag('config', 'G-5DPVV2HZWM');
+        <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script> 
+
+
+
     
         // End tracking scripts 
 
