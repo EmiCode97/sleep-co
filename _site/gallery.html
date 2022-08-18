@@ -363,12 +363,13 @@
         createCookie(name,"",-1);
     }
     if(readCookie('cookie-notice-dismissed')=='true') {
+
         // Add tracking scripts here 
         window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-            gtag('config', 'G-5DPVV2HZWM');
+        gtag('config', 'G-5DPVV2HZWM');
     
         // End tracking scripts 
 
