@@ -4,7 +4,18 @@
 
 <!-- This is the head of our html where we add external resources and metadata-->
 <head> 
-    
+
+<!-- Google Analytics -->
+<script async src=”https://www.googletagmanager.com/gtag/js?id=G-R72MEDBXJK”></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+Function gtag(){dataLayer.push(arguments);}
+gtag(‘js’, new Date());
+
+gtag(‘config’, ‘G-R72MEDBXJK’);
+</script>
+
+
 <!-- Viewport meta for responsive -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -66,7 +77,18 @@
 
 
 
- <!-- Viewport meta for responsive -->
+ <!-- Google Analytics -->
+<script async src=”https://www.googletagmanager.com/gtag/js?id=G-R72MEDBXJK”></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+Function gtag(){dataLayer.push(arguments);}
+gtag(‘js’, new Date());
+
+gtag(‘config’, ‘G-R72MEDBXJK’);
+</script>
+
+
+<!-- Viewport meta for responsive -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Metadata for Favicons -->
@@ -337,11 +359,14 @@
     }
     if(readCookie('cookie-notice-dismissed')=='true') {
         // Add tracking scripts here 
-        window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      <script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-  gtag('config', 'G-5DPVV2HZWM');
+gtag('config', 'G-5DPVV2HZWM');
+</script>
+
         // End tracking scripts 
     } else {
         document.getElementById('cookie-notice').style.display = 'block';
