@@ -36,8 +36,11 @@
 
         
         // Add tracking scripts here 
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      {% include personal-tracking-scripts.js %}
+        gtag('config', 'G-5DPVV2HZWM');
 
         // End tracking scripts 
 
